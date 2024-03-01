@@ -115,6 +115,13 @@ vim.opt.showmode = false
 -- Enable break indent
 vim.opt.breakindent = true
 
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+
+vim.opt.smartindent = true
+
 -- Save undo history
 vim.opt.undofile = true
 
@@ -144,6 +151,8 @@ vim.opt.inccommand = 'split'
 
 -- Show which line your cursor is on
 vim.opt.cursorline = true
+
+vim.opt.colorcolumn = '80'
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
