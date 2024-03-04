@@ -5,10 +5,17 @@
 return {
   {
     'tpope/vim-fugitive',
-    opts = {},
     config = function()
       vim.keymap.set('n', '<leader>gs', vim.cmd.Git)
       vim.keymap.set('n', '<leader>gd', vim.cmd.Gdiffsplit)
+    end,
+  },
+  {
+    'nvim-tree/nvim-tree.lua',
+    config = function()
+      require('nvim-tree').setup {
+        vim.keymap.set('n', '<leader>t', vim.cmd.NvimTreeToggle),
+      }
     end,
   },
 }
