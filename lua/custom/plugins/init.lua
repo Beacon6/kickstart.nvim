@@ -6,16 +6,8 @@ return {
   {
     'tpope/vim-fugitive',
     config = function()
-      vim.keymap.set('n', '<leader>gs', vim.cmd.Git)
-      vim.keymap.set('n', '<leader>gd', vim.cmd.Gdiffsplit)
-    end,
-  },
-  {
-    'nvim-tree/nvim-tree.lua',
-    config = function()
-      require('nvim-tree').setup {
-        vim.keymap.set('n', '<leader>t', vim.cmd.NvimTreeToggle),
-      }
+      vim.keymap.set('n', '<leader>gs', vim.cmd.Git, { desc = '[G]it [S]tatus' })
+      vim.keymap.set('n', '<leader>gd', vim.cmd.Gdiffsplit, { desc = '[G]it [D]iff Split View' })
     end,
   },
 }
