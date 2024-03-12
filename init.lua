@@ -156,6 +156,7 @@ vim.opt.inccommand = 'split'
 vim.opt.cursorline = true
 
 vim.opt.colorcolumn = '80'
+vim.opt.wrap = false
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
