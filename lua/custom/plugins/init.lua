@@ -44,4 +44,7 @@ return {
       end, { desc = 'Go to file [4]' })
     end,
   },
+  {
+    'christoomey/vim-tmux-navigator',
+  },
 }
