@@ -60,4 +60,17 @@ return {
       cmp.event:on('confirm_done', cmp_autopairs.on_confirm_done())
     end,
   },
+  {
+    'nvim-tree/nvim-tree.lua',
+    config = function()
+      require('nvim-tree').setup()
+      local api = require 'nvim-tree.api'
+      vim.g.loaded_netrw = 1
+      vim.g.loaded_netrwPlugin = 1
+
+      vim.keymap.set('n', '<leader>n', function()
+        api.tree.toggle()
+      end, { desc = 'Toggle [N]vimTree' })
+    end,
+  },
 }

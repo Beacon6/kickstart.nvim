@@ -170,8 +170,6 @@ vim.opt.scrolloff = 10
 vim.keymap.set('v', '<M-j>', ":m '>+1<CR>gv=gv")
 vim.keymap.set('v', '<M-k>', ":m '<-2<CR>gv=gv")
 
-vim.keymap.set('n', '<leader>n', vim.cmd.Ex, { desc = 'Open [N]etrw' })
-
 vim.keymap.set({ 'n', 'v' }, '<leader>y', [["+y]], { desc = 'Yank to system clipboard' })
 
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
