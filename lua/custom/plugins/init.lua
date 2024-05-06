@@ -51,7 +51,4 @@ return {
     'brenoprata10/nvim-highlight-colors',
     opts = {},
   },
-  {
-    'tjdevries/colorbuddy.nvim',
-  },
 }
