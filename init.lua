@@ -170,8 +170,6 @@ vim.opt.scrolloff = 10
 vim.keymap.set('v', '<M-j>', ":m '>+1<CR>gv=gv")
 vim.keymap.set('v', '<M-k>', ":m '<-2<CR>gv=gv")
 
-vim.keymap.set('n', '<leader>n', vim.cmd.Ex, { desc = 'Open [N]etrw' })
-
 vim.keymap.set({ 'n', 'v' }, '<leader>y', [["+y]], { desc = 'Yank to system clipboard' })
 
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
@@ -751,9 +749,9 @@ require('lazy').setup({
 
           -- If you prefer more traditional completion keymaps,
           -- you can uncomment the following lines
-          --['<CR>'] = cmp.mapping.confirm { select = true },
-          --['<Tab>'] = cmp.mapping.select_next_item(),
-          --['<S-Tab>'] = cmp.mapping.select_prev_item(),
+          ['<CR>'] = cmp.mapping.confirm { select = true },
+          ['<Tab>'] = cmp.mapping.select_next_item(),
+          ['<S-Tab>'] = cmp.mapping.select_prev_item(),
 
           -- Manually trigger a completion from nvim-cmp.
           --  Generally you don't need this, because nvim-cmp will display
@@ -801,7 +799,7 @@ require('lazy').setup({
     priority = 1000, -- Make sure to load this before all the other start plugins.
     init = function()
       -- Load the colorscheme here.
-      vim.cmd.colorscheme 'catppuccin-mocha'
+      vim.cmd.colorscheme 'gruvbuddy'
     end,
   },
 
